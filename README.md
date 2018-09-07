@@ -13,10 +13,10 @@ The folllowing topics are covered by my project:
 - [x] **Readability**. The code is very clear,well documented and consistent.
 
 
-<pre>                    Same&nbsp;&nbsp                                                Different</pre>
+<pre>     Same&nbsp;&nbsp                                                Different</pre>
 
-<pre><img src="imgs/center.jpg" width="200">                          <img src="imgs/center.jpg" width="200">
-<img src="imgs/center99.jpg" width="200">                          <img src="imgs/decenter99.jpg" width="200"></pre>
+<pre><img src="imgs/center.jpg" width="250">                          <img src="imgs/center.jpg" width="250">
+<img src="imgs/center99.jpg" width="250">                          <img src="imgs/decenter99.jpg" width="250"></pre>
 
 
 ## Model
