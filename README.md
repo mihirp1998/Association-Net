@@ -19,8 +19,13 @@ The folllowing topics are covered by my project:
 <img src="imgs/center99.jpg" width="300">                          <img src="imgs/decenter99.jpg" width="300"></pre>
 
 
+## 
 
-## Data Requirement
+
+
+
+
+## Data Processing
 We would be training our AssociationNet using Object Tubes which contains a pair of images in which the object is being tracked and a pair in which it is not tracked. As the data is not labeled it can be considered as an Unsupervised way of learning.
 
 **First Get Dataset from the Image Net website from the following link**
@@ -37,6 +42,8 @@ python scripts/build_VID2015_imdb.py
 python scripts/build_VID2015_imdb.py
 ```
 
+## Train Association Net
+
 The credit for the base script goes to ''. Although I have made few changes in it to fit our data requirements.
 
 *Train the Siamese Model by the following script*
@@ -44,6 +51,8 @@ The credit for the base script goes to ''. Although I have made few changes in i
 python train.py
 ```
 *The weights will be saved in weights.h5*
+
+## Pretrain Yolo
 
 *You can use these weights in training the Yolo Architecture by running the following code*
 
