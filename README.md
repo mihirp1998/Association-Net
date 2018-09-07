@@ -4,7 +4,7 @@ This is an unofficial implementation of the Paper  "Learning Feature Hierarchies
 
 ## Introduction
 
-The following is an Unofficial implementation of [Learning Feature Hierarchies from Long-Range Temporal Associations in Videos](https://arxiv.org/pdf/1801.00508.pdf) by Panna Felsen, Katerina Fragkiadaki, Jitendra Malik and Alexei Efros. 
+The following is an Unofficial implementation of [Learning Feature Hierarchies from Long-Range Temporal Associations in Videos](https://www.cs.cmu.edu/~katef/papers/AssociationNet.pdf) by Panna Felsen, Katerina Fragkiadaki, Jitendra Malik and Alexei Efros. 
 
 The folllowing topics are covered by my project:
 - [x] **Data-Preprocessing**. Build pairs of object tubes which follow and dont follow the object
@@ -49,7 +49,7 @@ python scripts/build_VID2015_imdb.py
 
 ## Train Association Net
 
-The credit for the base script goes to ''. Although I have made few changes in it to fit our data requirements.
+The credit for the base script goes to [Huazhong University of Science and Technology](https://github.com/bilylee/SiamFC-TensorFlow). Although I have made few changes in it to fit our data requirements.
 
 *Train the Siamese Model by the following script*
 ```bash 
@@ -72,4 +72,4 @@ python train.py  -c config.json
 python predict.py -c config.json -w /path/to/best_weights.h5 -i /path/to/image/or/video
 ```
 
-I have used the existing keras implemetation of Yolo from the following link
+I have used the existing keras implemetation of Yolo from the following [link](https://github.com/experiencor/keras-yolo2)
