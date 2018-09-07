@@ -1,10 +1,3 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# Copyright © 2017 bily     Huazhong University of Science and Technology
-#
-# Distributed under terms of the MIT license.
-
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -89,7 +82,7 @@ def process_split(root_dir, save_dir, split, subdir='', ):
         decenter_track_save_dir = get_track_save_directory(save_dir, 'train', subdir, video,False)
 
         mkdir_p(center_track_save_dir )
-        mkdir_p(center_track_save_dir )
+        mkdir_p(decenter_track_save_dir )
 
         savenameCenter = osp.join(center_track_save_dir, '{}.{:02d}.crop.x.jpg'.format(filename, int(id)))
         
@@ -126,9 +119,8 @@ def process_split(root_dir, save_dir, split, subdir='', ):
 
 if __name__ == '__main__':
   vid_dir = osp.join(ROOT_DIR, 'data/ILSVRC2015')
-  # print("yes")
-  # Or, you could save the actual curated data to a disk with sufficient space
-  # then create a soft link in `data/ILSVRC2015-VID-Curation`
+
+
   save_dir = 'data/ILSVRC2015-VID-Curation'
 
   pool = ThreadPool(processes=5)
@@ -136,9 +128,7 @@ if __name__ == '__main__':
   one_work = lambda a, b: process_split(vid_dir, save_dir, a, b)
   print(vid_dir)
   results = []
-  # results.append(pool.apply_async(one_work, ['val', '']))
+
   results.append(pool.apply_async(one_work, ['train', 'ILSVRC2015_VID_train_0000']))
-  # results.append(pool.apply_async(one_work, ['train', 'ILSVRC2015_VID_train_0001']))
-  # results.append(pool.apply_async(one_work, ['train', 'ILSVRC2015_VID_train_0002']))
-  # results.append(pool.apply_async(one_work, ['train', 'ILSVRC2015_VID_train_0003']))
+
   ans = [res.get() for res in results]
