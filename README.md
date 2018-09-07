@@ -19,3 +19,7 @@ Creates pickled file for the dataset
 
 The credit for the base script goes to ''. Although I have made few changes in it to fit our data requirements.
 
+Run python train.py
+
+The trained model is saved in model.h5 file
+
