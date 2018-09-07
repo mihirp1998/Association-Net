@@ -13,10 +13,10 @@ The folllowing topics are covered by my project:
 - [x] **Readability**. The code is very clear,well documented and consistent.
 
 
-<pre>Same&nbsp;&nbsp                                                    Different</pre>
+<pre>                    Same&nbsp;&nbsp                                                    Different</pre>
 
-<pre><img src="imgs/center.jpg" width="300">                               <img src="imgs/center.jpg" width="100"></pre>
-<pre><img src="imgs/center99.jpg" width="300">                              <img src="imgs/decenter99.jpg" width="100"</pre>
+<pre><img src="imgs/center.jpg" width="300">                               <img src="imgs/center.jpg" width="300"></pre>
+<pre><img src="imgs/center99.jpg" width="300">                              <img src="imgs/decenter99.jpg" width="300"</pre>
 
 ## Data Requirement
 We would be training our AssociationNet using Object Tubes which contains a pair of images in which the object is being tracked and a pair in which it is not tracked. As the data is not labeled it can be considered as an Unsupervised way of learning.
