@@ -20,10 +20,13 @@ The folllowing topics are covered by my project:
 
 
 ## Model
+
 Network in the Paper
-<img src="imgs/network.png" width="300">  
+<img src="imgs/network.png" width="800">
+
+
 Tensorboard Graph in Network
-<img src="imgs/graph.png" width="300">
+<img src="imgs/graph.png" width="800">
 
 
 
