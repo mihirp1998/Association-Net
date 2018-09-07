@@ -15,7 +15,8 @@ The folllowing topics are covered by my project:
 
 <pre>                    Same&nbsp;&nbsp                                                Different</pre>
 
-<pre><img src="imgs/center.jpg" width="300">                          <img src="imgs/center.jpg" width="300"></pre>
+<pre><img src="imgs/center.jpg" width="300">                          <img src="imgs/center.jpg" width="300">
+<img src="imgs/center99.jpg" width="300">                           <img src="imgs/decenter99.jpg" width="300"></pre>
 
 
 
