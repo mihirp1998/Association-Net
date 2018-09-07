@@ -197,7 +197,7 @@ class AssociationNet(BaseFeatureExtractor):
 
 
         self.feature_extractor = Model(input_image, net)  
-        self.feature_extractor.load_weights("../model.h5")
+        self.feature_extractor.load_weights("../weights.h5")
 
     def normalize(self, image):
         return image / 255.

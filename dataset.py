@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow.contrib.slim as slim
 import random
-from tensorflow.examples.tutorials.mnist import input_data
+
 from numpy.random import choice, permutation
 from itertools import combinations
 from cv2 import imread
@@ -26,10 +26,9 @@ class BatchGenerator():
 		left = []
 		right = []
 		sim = []
-		# centered = a['a']['videos']
-		# decentered = a['a']['videos']
-		# genuine
-		for i in range(len(self.centered))*5:
+
+		# two images centered at the object
+		for i in range(len(self.centered))*batch_size:
 			n = 5
 			centered = self.centered[i]
 
@@ -38,8 +37,8 @@ class BatchGenerator():
 
 			sim.append([1])
 
-		#impostor
-		for i in range(len(self.centered))*5:
+		#two images with centers a bit moved
+		for i in range(len(self.centered))*batch_size:
 			centered = self.centered[i]
 			decentered = self.decentered[i]
 
@@ -49,7 +48,7 @@ class BatchGenerator():
 		return np.array(left), np.array(right), np.array(sim)
 		
 
-def get_mnist():
+def get_data():
 	import pickle
 	a = pickle.load(open('data/train_imdb1.pickle','rb'))
 	return a
