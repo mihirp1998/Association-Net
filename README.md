@@ -19,9 +19,11 @@ The folllowing topics are covered by my project:
 <img src="imgs/center99.jpg" width="300">                          <img src="imgs/decenter99.jpg" width="300"></pre>
 
 
-## 
-
-
+## Model
+Network in the Paper
+<img src="imgs/network.png" width="300">  
+Tensorboard Graph in Network
+<img src="imgs/graph.png" width="300">
 
 
 
