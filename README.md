@@ -51,7 +51,7 @@ python scripts/build_VID2015_imdb.py
 
 The credit for the base script goes to [Huazhong University of Science and Technology](https://github.com/bilylee/SiamFC-TensorFlow). Although I have made few changes in it to fit our data requirements.
 
-*Train the Siamese Model by the following script*
+*Train the Association Net Model by the following script*
 ```bash 
 python train.py
 ```
