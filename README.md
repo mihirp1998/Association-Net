@@ -33,7 +33,8 @@ Tensorboard Graph in Network
 ## Data Processing
 We would be training our AssociationNet using Object Tubes which contains a pair of images in which the object is being tracked and a pair in which it is not tracked. As the data is not labeled it can be considered as an Unsupervised way of learning.
 
-**First Get Dataset from the Image Net website from the following link**
+**First Get Dataset from the Image Net website from the following [link](http://bvisionweb1.cs.unc.edu/ILSVRC2017/download-videos-1p39.php)**
+
 Augment the folder ILSVRC2015 with the new data
 
 
